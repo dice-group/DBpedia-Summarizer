@@ -1,50 +1,73 @@
-# Towards Abstractive Summarization of DBpedia Abstracts Using Language Models
+## Towards Abstractive Summarization of DBpedia Abstracts Using Language Models
 
-
+---
 ## Overview
 
-Dataset and code for paper "Towards Abstractive Summarization of DBpedia Abstracts Using Language Models".
+This repository contains the dataset and code for our paper "Abstractive Summarization of DBpedia Abstracts Using Language Models." We propose an approach using pre-trained language models, specifically BART and T5, to generate short and comprehensive summaries for DBpedia abstracts in six languages (English, German, French, Italian, Spanish, and Dutch).
+
+<figure style="text-align: center;">
+<img src="dbepdia-summarization.pdf" width="600" height="400">
+ <figcaption>The pipeline of DBpedia summarization using language models</figcaption>
+</figure>
+
+---
+## Dependencies
+
+- bert-score 0.3.12
+- ipykernel 6.17.1
+- ipython 8.6.0
+- nltk 3.7
+- notebook 6.5.2
+- pandas 1.5.1
+- spacy 3.4.3
+- torch 1.13.0
+- transformers 4.25.1
 
 
-We propose an abstractive summarization approach using pre-trained language models to generate short, concise and comprehensive summaries for DBpedia abstracts. We evaluate the efficiency of state-of-the-art language models **BART** and **T5** in generating abstractive summaries of DBpedia abstracts in six languages (English, German, French, Italian, Spanish and Dutch). 
-
-
-## Dependencies:
+## Repository Structure:
 
 ```
-bert-score 0.3.12
-ipykernel 6.17.1
-ipython 8.6.0
-nltk 3.7
-notebook 6.5.2
-pandas 1.5.1
-spacy 3.4.3
-torch 1.13.0
-transformers 4.25.1
+├── data
+│   ├── BARTsum_nl_1000.csv
+│   ├── BARTsum_nl_534.csv
+│   ├── data_en.csv
+│   ├── data_fr.csv
+│   ├── data_nl.csv
+│   ├── sum_en100.csv
+│   └── t5sum_nl_1000.csv
+├── full_abstracts
+│   └── info.md
+├── short_abstracts
+│   └── info.md
+├── baselines.ipynb
+├── data_creation.ipynb
+├── dbepdia-summarization.pdf
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
-
 
 ## Installation
+
+To install the dependencies, run:
 
 ```
 pip install -r requirements.txt
 ```
 
+## Data Preparation
 
-## Data preparation
+1. Download the DBpedia abstract file (in .ttl format) for the desired language from [this source](http://downloads.dbpedia.org/2015-04/ext/nlp/abstracts/) and place it in the `full_abstracts` folder.
+2. Download the DBpedia short abstract file (in .ttl format) for the desired language from [this source](https://databus.dbpedia.org/dbpedia/text/short-abstracts/) and unzip it in the `short_abstracts` folder.
+3. Run the `data_creation` notebook. The final dataframes should be located in the `data` folder.
 
-1. Download DBpedia abstract file (.ttl) in required language [source](http://downloads.dbpedia.org/2015-04/ext/nlp/abstracts/) and put in in the [full_abstracts](/full_abstracts/) folder.
-2. Download DBpedia shorteabstract file (.ttl) in required language [source](https://databus.dbpedia.org/dbpedia/text/short-abstracts/) and unzip it in the [short_abstracts](/short_abstracts/) folder.
-3. Run the [data_creation notebook](/data_creation.ipynb). Final dataframes should be located in [data](/data/) folder.
+## Pretrained Models
 
+1. The data for generating summaries is located in the `data` folder in .csv files.
+2. The `baselines.ipynb` notebook contains the code for running the pretrained models (T5, BART, and BART-CNN).
+3. The generated summaries are stored in separate columns in dataframe files (e.g. `t5sum_nl_1000.csv`, `BARTsum_nl_534.csv`).
 
-## Pretrained models
-
-1. Data for generating summaries located in [data](/data/) folder in .csv files.
-2. Notebook [baselines.ipynb](/baselines.ipynb) contains code for running pretrained models (T5, BART and BART-CNN).
-3. Generated summaries storing in the dataframe files in separate columns ([example](/data/t5sum_nl_1000.csv), [example](/data/BARTsum_nl_534.csv)).
-
-
+---
 ## Contact
 
-If you have any further questions/feedback, please contact corresponding authors at [fedor.vitiugin@upf.edu](mailto:fedor.vitiugin@upf.edu) and [hamada.zahera@uni-paderborn.de](mailto:hamada.zahera@uni-paderborn.de).
+For any questions or feedback, please contact the corresponding authors at [fedor.vitiugin@upf.edu](mailto:fedor.vitiugin@upf.edu) and [hamada.zahera@uni-paderborn.de](mailto:hamada.zahera@uni-paderborn.de).
