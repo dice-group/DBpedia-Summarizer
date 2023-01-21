@@ -5,10 +5,11 @@
 
 This repository contains the dataset and code for our paper "Abstractive Summarization of DBpedia Abstracts Using Language Models." We propose an approach using pre-trained language models, specifically BART and T5, to generate short and comprehensive summaries for DBpedia abstracts in six languages (English, German, French, Italian, Spanish, and Dutch).
 
-<figure style="text-align: center;">
+<p align="center">
 <img src="dbepdia-summarization.png" width="450" height="400">
- <figcaption>The pipeline of DBpedia summarization using language models</figcaption>
-</figure>
+</p>
+<p align="center">The pipeline of DBpedia summarization using language models</p>
+
 
 ---
 ## Dependencies
