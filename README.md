@@ -1,6 +1,5 @@
 ## Towards Abstractive Summarization of DBpedia Abstracts Using Language Models
 
-## Overview
 
 This repository contains the dataset and code for our paper "Abstractive Summarization of DBpedia Abstracts Using Language Models." We propose an approach using pre-trained language models, specifically BART and T5, to generate short and comprehensive summaries for DBpedia abstracts in six languages (English, German, French, Italian, Spanish, and Dutch).
 
@@ -10,7 +9,7 @@ This repository contains the dataset and code for our paper "Abstractive Summari
 <p align="center">The pipeline of DBpedia summarization using language models</p>
 
 
----
+
 ## Dependencies
 
 - bert-score 0.3.12
@@ -67,12 +66,13 @@ pip install -r requirements.txt
 2. The `baselines.ipynb` notebook contains the code for running the pretrained models (T5, BART, and BART-CNN).
 3. The generated summaries are stored in separate columns in dataframe files (e.g. `t5sum_nl_1000.csv`, `BARTsum_nl_534.csv`).
 
----
+
 ## Generating Astractive Summaries for The Entire DBpedia Abstracts
 
 More details are descripted [here](DBpedia-abstractive-summarization.md) about downloading and processing the entire DBpedia abstracts.
 
----
+
+
 ## Contact
 
 For any questions or feedback, please contact the corresponding authors at [fedor.vitiugin@upf.edu](mailto:fedor.vitiugin@upf.edu) and [hamada.zahera@uni-paderborn.de](mailto:hamada.zahera@uni-paderborn.de).
