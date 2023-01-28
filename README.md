@@ -66,19 +66,12 @@ pip install -r requirements.txt
 2. The `baselines.ipynb` notebook contains the code for running the pretrained models (T5, BART, and BART-CNN).
 3. The generated summaries are stored in separate columns in dataframe files (e.g. `t5sum_nl_1000.csv`, `BARTsum_nl_534.csv`).
 
-<<<<<<< HEAD
 
 ## Generating Astractive Summaries for The Entire DBpedia Abstracts
-=======
----
-## Generating Astractive Summaries for The Full DBpedia Abstracts
->>>>>>> a8d51aa (uploaded DBpedia English Abstracts)
 
 More details are descripted [here](DBpedia-abstractive-summarization.md) about downloading and processing the entire DBpedia abstracts.
 
 
-<<<<<<< HEAD
-=======
 ### Download Genereated Summaries: 
 * English version is available at https://zenodo.org/record/7441120
 * German (In Progress)
@@ -97,7 +90,6 @@ More details are descripted [here](DBpedia-abstractive-summarization.md) about d
 }
 
 ```
->>>>>>> a8d51aa (uploaded DBpedia English Abstracts)
 
 ## Contact
 
