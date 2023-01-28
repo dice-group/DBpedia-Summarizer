@@ -67,7 +67,7 @@ pip install -r requirements.txt
 3. The generated summaries are stored in separate columns in dataframe files (e.g. `t5sum_nl_1000.csv`, `BARTsum_nl_534.csv`).
 
 
-## Generating Astractive Summaries for The Entire DBpedia Abstracts
+## Generating Astractive Summaries for The Full DBpedia Abstracts
 
 More details are descripted [here](DBpedia-abstractive-summarization.md) about downloading and processing the entire DBpedia abstracts.
 
