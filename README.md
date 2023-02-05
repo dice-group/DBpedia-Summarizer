@@ -1,7 +1,7 @@
 ## Towards Abstractive Summarization of DBpedia Abstracts Using Language Models
 
 
-This repository contains the dataset and code for our paper "Abstractive Summarization of DBpedia Abstracts Using Language Models." We propose an approach using pre-trained language models, specifically BART and T5, to generate short and comprehensive summaries for DBpedia abstracts in six languages (English, German, French, Italian, Spanish, and Dutch).
+This repository contains code for our paper "Abstractive Summarization of DBpedia Abstracts Using Language Models." We propose an approach using pre-trained language models, specifically BART and T5, to generate short and comprehensive summaries for DBpedia abstracts in six languages (English, German, French, Italian, Spanish, and Dutch).
 
 <p align="center">
 <img src="dbepdia-summarization.png" width="450" height="400">
@@ -27,23 +27,27 @@ This repository contains the dataset and code for our paper "Abstractive Summari
 
 ```
 ├── data
-│   ├── BARTsum_nl_1000.csv
-│   ├── BARTsum_nl_534.csv
-│   ├── data_en.csv
-│   ├── data_fr.csv
-│   ├── data_nl.csv
-│   ├── sum_en100.csv
-│   └── t5sum_nl_1000.csv
+│   ├── info.md
+├── data_eval
+│   ├── de_100_summaries.csv
+│   ├── en_100_summaries.csv
+│   ├── es_100_summaries.csv
+│   ├── fr_100_summaries.csv
+│   ├── it_100_summaries.csv
+│   ├── nl_100_summaries.csv
 ├── full_abstracts
 │   └── info.md
 ├── short_abstracts
 │   └── info.md
 ├── baselines.ipynb
 ├── data_creation.ipynb
-├── dbepdia-summarization.pdf
+├── dbepdia-summarization.png
+├── DBpepdia-abstractive-summarization.md
 ├── LICENSE
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+├── summarization-cuda1.py
+└── summarization-split.py
 ```
 
 ## Installation
@@ -64,7 +68,7 @@ pip install -r requirements.txt
 
 1. The data for generating summaries is located in the `data` folder in .csv files.
 2. The `baselines.ipynb` notebook contains the code for running the pretrained models (T5, BART, and BART-CNN).
-3. The generated summaries are stored in separate columns in dataframe files (e.g. `t5sum_nl_1000.csv`, `BARTsum_nl_534.csv`).
+3. The original and short abstracts and generated summaries used for crowdsourcing evaluation are stored in in `data_eval` folder.
 
 
 ## Generating Astractive Summaries for The Full DBpedia Abstracts
