@@ -28,6 +28,13 @@ This repository contains code for our paper "Abstractive Summarization of DBpedi
 ```
 ├── data
 │   ├── info.md
+├── data_crowd
+│   ├── de_crowd.csv
+│   ├── en_crowd.csv
+│   ├── es_crowd.csv
+│   ├── fr_crowd.csv
+│   ├── it_crowd.csv
+│   ├── nl_crowd.csv
 ├── data_eval
 │   ├── de_100_summaries.csv
 │   ├── en_100_summaries.csv
@@ -63,6 +70,12 @@ pip install -r requirements.txt
 1. Download the DBpedia abstract file (in .ttl format) for the desired language from [this source](http://downloads.dbpedia.org/2015-04/ext/nlp/abstracts/) and place it in the `full_abstracts` folder.
 2. Download the DBpedia short abstract file (in .ttl format) for the desired language from [this source](https://databus.dbpedia.org/dbpedia/text/short-abstracts/) and unzip it in the `short_abstracts` folder.
 3. Run the `data_creation` notebook. The final dataframes should be located in the `data` folder.
+
+
+## Crowdsourcing evaluation
+
+The complete result of evaluation made by crowdsourcing agents are presented in [data_crowd](/data_crowd/) folder. The data were divided by language. Each file contains column 'choice' which demonstrates which summary were chosen by crowdworker.
+
 
 ## Pretrained Models
 
