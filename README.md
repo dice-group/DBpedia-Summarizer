@@ -98,17 +98,11 @@ More details are descripted [here](DBpedia-abstractive-summarization.md) about d
 ## How to cite
 ```
 
-@article{dbpedia-summarization,
-  title={Towards Abstractive Summarization of DBpedia Abstracts Using Language Models},
-  author={Hamada M. Zahera, Fedor Vitiugin, Mohamed Ahmed Sherif, Carlos Castillo and Axel-Cyrille Ngonga Ngomo},
-  Conference={TBD},
-  year={TBD},
-  publisher={TBD}
-}
+TBD
+
 
 ```
 
 ## Contact
-
-For any questions or feedback, please contact the corresponding authors at [fedor.vitiugin@upf.edu](mailto:fedor.vitiugin@upf.edu) and [hamada.zahera@uni-paderborn.de](mailto:hamada.zahera@uni-paderborn.de).
+TBD
 
