@@ -89,10 +89,6 @@ The complete result of evaluation made by crowdsourcing agents are presented in 
 More details are descripted [here](DBpedia-abstractive-summarization.md) about downloading and processing the entire DBpedia abstracts.
 
 
-### Download Genereated Summaries: 
-* English version is available at https://zenodo.org/record/7441120
-* German (In Progress)
-
 ---
 
 ## How to cite
