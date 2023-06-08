@@ -43,5 +43,3 @@ cat batch* >> dbpedia-abstractive-summaries.ttl
 ```
 
 ---
-
-If you have any further questions, please contact [hamada.zahera@uni-paderborn.de](mailto:hamada.zahera@uni-paderborn.de)
